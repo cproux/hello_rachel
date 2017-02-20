@@ -1,2 +1,8 @@
+class HelloRachel(object):
+
+    def say_hello(self):
+        print('hello Rachel !')
+
 if __name__ == '__main__':
-    print('hello Rachel !')
+    o = HelloRachel()
+    o.say_hello()
