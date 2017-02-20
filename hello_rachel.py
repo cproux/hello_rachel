@@ -1,8 +1,15 @@
-class HelloRachel(object):
+class Speaker(object):
 
-    def say_hello(self):
-        print('hello Rachel !')
+    def __init__(self, name):
+        self.__name = name
+
+    def say(self, something):
+        """
+        say something as a Speaker named with name
+        """
+        print('{} says: {}'.format(self.__name, something))
 
 if __name__ == '__main__':
-    o = HelloRachel()
-    o.say_hello()
+    rachel = Speaker(name='Rachel')
+    rachel.say('hello')
+    rachel.say('coucou')
